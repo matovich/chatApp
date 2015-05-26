@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatApp.ChatClient">
+   <children>
+      <TextArea fx:id="taClientView" layoutY="31.0" prefHeight="201.0" prefWidth="422.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+      <HBox layoutX="14.0" layoutY="1.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Your Name: " />
+            <TextField fx:id="tfClientName" layoutX="111.0" layoutY="9.0" />
+         </children>
+      </HBox>
+      <VBox layoutY="236.0" prefHeight="177.0" prefWidth="422.0">
+         <children>
+            <Label layoutX="5.0" layoutY="342.0" text="Type a Message:">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="taClientMessage" layoutX="4.0" layoutY="363.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="4.0" />
+            <Button fx:id="btSend" layoutX="364.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleSendButton" text="Send">
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
