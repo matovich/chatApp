@@ -15,6 +15,7 @@ import java.util.ResourceBundle;
 
 /**
  * Created by tswed on 4/28/15.
+ * Edited on 5/26/15.
  */
 public class ChatClient implements Initializable {
     public TextField tfClientName;
